@@ -3,6 +3,14 @@
   align-items: center;
   text-align: center;
   text-transform: uppercase;
+  padding-left: 18px;
+  padding-right: 18px;
+    @media (min-width: @tablet-width) {
+    width: 520px;
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 37px;
+  }
 }
 
 .description__title {
@@ -11,6 +19,18 @@
   font-size: 18px;
 }
 
+@media (min-width: @tablet-width) {
+  .description__title {
+    font-size: 21px;
+  }
+}
+
 .description__subtitle {
   color: @darkgray;
+}
+
+.description__title--ask {
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+  }
 }
