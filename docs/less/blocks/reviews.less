@@ -7,6 +7,93 @@
   padding-right: 18px;
 }
 
+.reviews__form {
+  @media (min-width: @tablet-width) {
+    width: 648px;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  @media (min-width: @desktop-width) {
+    width: 960px;
+  }
+}
+
+.reviews__name {
+  @media (min-width: @tablet-width) {
+    width: 270px;
+  }
+}
+
+.reviews__wrap--name {
+  @media (min-width: @tablet-width) {
+    width: 270px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-bottom: 20px;
+  }
+}
+
+.reviews__wrap--cantacts {
+  @media (min-width: @desktop-width) {
+    width: 482px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-bottom: 20px;
+  }
+}
+
+
+.reviews__impression {
+  @media (min-width: @tablet-width) {
+    width: 320px;
+  }
+}
+
+.reviews__visit,
+.reviews__contacts,
+.reviews__emotions {
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
+}
+
+.reviews__impression {
+  order: -1;
+}
+
+.reviews__contacts {
+  @media (min-width: @desktop-width) {
+    text-align: center;
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.reviews__label--opacity {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.reviews__desc--contacts {
+  @media (min-width: @tablet-width) {
+    width: 648px;
+    display: flex;
+  }
+}
+
+.reviews__visit {
+  text-align: center;
+  @media (min-width: @tablet-width) {
+    margin-top: 50px;
+  }
+}
+
 .reviews fieldset {
   border: none;
   padding: 0;
@@ -18,7 +105,23 @@
 
 .checkbox__list {
   list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+  @media (min-width: @tablet-width) {
+    width: 458px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 60px;
+    margin-top: 48px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 932px;
+    margin-left: 30px;
+  }
 }
+
 
 .reviews__item {
   margin-bottom: 43px;
@@ -66,6 +169,7 @@
   font-weight: 400;
   text-transform: none;
   color: @darkgray;
+  margin-right: 14px;
 }
 
 .reviews__checkbox + label::before {
@@ -102,7 +206,7 @@
   padding-bottom: 18px;
   box-sizing: border-box;
   outline: none;
-  width: 278px;
+  width: 100%;
   height: 58px;
 }
 
@@ -118,6 +222,11 @@
 
 .reviews__warning {
   font-weight: 400;
+  font-size: 14px;
+  display: none;
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
 }
 
 .reviews__desc::placeholder {
@@ -133,4 +242,16 @@
 
 .reviews__desc--text:focus {
   padding-top: 14px;
+}
+
+.reviews__submit {
+  @media (min-width: @tablet-width) {
+    width: 648px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 58px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 960px;
+  }
 }

@@ -46,26 +46,36 @@
     <main class="page-main">
         <section class="reviews">
             <h2 class="visually-hidden">Оставьте отзыв о Седоне</h2>
-            <form class="form-reviews" action="https://echo.htmlacademy.ru/courses" method="post">
-                <div class="description">
-                    <p class="description__title">Оставьте свой отзыв</p>
-                    <p class="description__subtitle">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-                </div>
+            <div class="description">
+                <p class="description__title">Оставьте свой отзыв</p>
+                <p class="description__subtitle">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+            </div>
+            <form class="reviews__form" action="https://echo.htmlacademy.ru/courses" method="post">
                 <fieldset class="reviews__name">
                     <legend class="reviews__legend">Представьтесь:</legend>
-                    <label class="reviews__label--name" for="name">Имя*:</label>
-                    <input class="reviews__desc" type="text" name="name" id="name" placeholder="Имя" required>
-                    <label class="reviews__label--name" for="surname">Фамилия*:</label>
-                    <input class="reviews__desc" type="text" name="surname" id="surname" placeholder="Фамилия" required>
-                    <label class="reviews__label--name" for="middle-name">Отчество:</label>
-                    <input class="reviews__desc" type="text" name="middle-name" id="middle-name" placeholder="Отчество">
+                    <div class="reviews__wrap--name">
+                        <label class="reviews__label--name" for="name">Имя*:</label>
+                        <input class="reviews__desc" type="text" name="name" id="name" placeholder="Имя" required>
+                    </div>
+                    <div class="reviews__wrap--name">
+                        <label class="reviews__label--name" for="surname">Фамилия*:</label>
+                        <input class="reviews__desc" type="text" name="surname" id="surname" placeholder="Фамилия" required>
+                    </div>
+                    <div class="reviews__wrap--name">
+                        <label class="reviews__label--name" for="middle-name">Отчество:</label>
+                        <input class="reviews__desc" type="text" name="middle-name" id="middle-name" placeholder="Отчество">
+                    </div>
                 </fieldset>
                 <fieldset class="reviews__contacts">
                     <legend class="reviews__legend">Контактная информация:</legend>
-                    <label class="reviews__label--name" for="phone">Контактный телефон*:</label>
-                    <input class="reviews__desc" type="number" name="phone" id="phone" placeholder="Введите телефон" required>
-                    <label class="reviews__label--name" for="email">Электронная почта*:</label>
-                    <input class="reviews__desc" type="email" name="email" id="email" placeholder="Введите e-mail" required>
+                    <div class="reviews__wrap--cantacts">
+                        <label class="reviews__label--name" for="phone"><span class="reviews__label--opacity">Контактный</span> телефон*:</label>
+                        <input class="reviews__desc reviews__desc--contacts" type="number" name="phone" id="phone" placeholder="Введите телефон" required>
+                    </div>
+                    <div class="reviews__wrap--cantacts">
+                        <label class="reviews__label--name" for="email">Электронная почта*:</label>
+                        <input class="reviews__desc reviews__desc--contacts" type="email" name="email" id="email" placeholder="Введите e-mail" required>
+                    </div>
                 </fieldset>
                 <fieldset class="reviews__impression">
                     <legend class="reviews__legend">Ваше Общее впечатление:</legend>
@@ -109,8 +119,10 @@
                     <legend class="reviews__legend">Опишите свои эмоции:</legend>
                     <textarea class="reviews__desc reviews__desc--text" name="text" placeholder="Опишите подробно все свои восторги"></textarea>
                 </fieldset>
-                <p class="reviews__warning">* — обязательные поля</p>
-                <button class="page__button button" type="submit">Отправить отзыв</button>
+                <div class="reviews__submit">
+                    <button class="button--reviews button" type="submit">Отправить отзыв</button>
+                    <p class="reviews__warning">* — обязательные поля</p>
+                </div>
             </form>
         </section>
     </main>

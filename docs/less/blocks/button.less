@@ -8,10 +8,6 @@
   text-transform: uppercase;
   padding: 16px 32px 16px 32px;
   width: 100%;
-    @media (min-width: @tablet-width) {
-      width: 458px;
-      height: 58px;
-  }
 }
 
 .button:hover {
@@ -21,4 +17,21 @@
 .button:active {
   background-color: @blue-sedona3;
   color: fade(@basik_white, 30%);
+}
+
+.button--reviews {
+  @media (min-width: @tablet-width) {
+    width: 324px;
+    height: 58px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 480px;
+  }
+}
+
+.button--page {
+  @media (min-width: @tablet-width) {
+    width: 458px;
+    height: 58px;
+  }
 }
