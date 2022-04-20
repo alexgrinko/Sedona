@@ -32,7 +32,7 @@
 .advantages__item {
   margin: 0;
 }
-
+/*
 .advantages__photo {
   height: 260px;
   object-fit: cover;
@@ -40,16 +40,82 @@
       height: 256px;
   }
 }
+*/
+.advantages-city--img {
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    display: flex;
+  }
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
+}
+
+.advantages__photo--city {
+  background-image: url("../img/img_index/photo-city-mob.jpg");
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/img_index/photo-city-tab.jpg");
+  }
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/img_index/photo-city-des.jpg");
+  }
+}
+
+.advantages__photo--bridge{
+  background-image: url("../img/img_index/photo-bridge-mob.jpg");
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/img_index/photo-bridge-tab.jpg");
+  }
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/img_index/photo-bridge-des.jpg");
+  }
+}
+
+.advantages__photo {
+  width: 100%;
+  height: 260px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  @media (min-width: @tablet-width) {
+    width: 512px;
+    height: 256px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 800px;
+  }
+}
+  /*
+.advantages__photo--city {
+  width: 100%;
+  height: 260px;
+  background-image: url("../img/img_index/photo-city-mob.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  @media (min-width: @tablet-width) {
+    width: 512px;
+    height: 256px;
+    background-image: url("../img/img_index/photo-city-tab.jpg");
+  }
+  @media (min-width: @desktop-width) {
+    width: 800px;
+    background-image: url("../img/img_index/photo-city-des.jpg");
+  }
+}
+*/
 
 .advantages__item--img {
   background-color: @blue-sedona;
-  min-height: 191px;
+  width: 100%;
+  height: 191px;
   box-sizing: border-box;
-    @media (min-width: @tablet-width) {
-      padding: 32px 40px;
-      padding-bottom: 40px;
-      width: 256px;
-      height: 256px;
+  @media (min-width: @tablet-width) {
+    padding: 32px 40px;
+    padding-bottom: 40px;
+    width: 256px;
+    height: 256px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 400px;
   }
 }
 
@@ -59,12 +125,13 @@
 }
 
 .advantages__item--info {
-  background-color: @lightgray;
+
   border-top: 1px solid @lightgray6;
   margin-left: 18px;
   margin-right: 18px;
   @media (min-width: @tablet-width) {
     border: none;
+    padding-top: 20px;
   }
 }
 
@@ -78,6 +145,7 @@
 
 
 .advantages__item--gray {
+  background-color: @lightgray;
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

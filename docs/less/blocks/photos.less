@@ -3,9 +3,11 @@
 }
 
 .photos__img {
-  padding: 0;
-  width: 280px;
+  object-fit: cover;
+  width: 100%;
   height: 280px;
+  background-repeat: no-repeat;
+  background-size: cover;
   @media (min-width: @tablet-width) {
     width: 324px;
     height: 267px;
@@ -21,12 +23,52 @@
   @media (min-width: @tablet-width) {
     width: 648px;
     height: 400px;
-    background-image: url("..img/catalog/space-desktop.jpg");
+    background-image: url("../img/catalog/space-desktop.jpg");
     background-repeat: no-repeat;
   }
   @media (min-width: @desktop-width) {
     width: 1200px;
     margin-bottom: -7px;
+  }
+}
+
+.photos__img--space {
+  background-image: url("../img/catalog/space-mob.jpg");
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/catalog/space-tab.jpg");
+  }
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/catalog/space-des.jpg");
+  }
+}
+
+.photos__img--vegetation {
+  background-image: url("../img/catalog/vegetation.jpg");
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/catalog/vegetation-tab.jpg");
+  }
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/catalog/vegetation-des.jpg");
+  }
+}
+
+.photos__img--road {
+  background-image: url("../img/catalog/road.jpg");
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/catalog/road-tab.jpg");
+  }
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/catalog/road-des.jpg");
+  }
+}
+
+.photos__img--most {
+  background-image: url("../img/catalog/most.jpg");
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/catalog/most-tab.jpg");
+  }
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/catalog/most-des.jpg");
   }
 }
 
@@ -41,7 +83,7 @@
   @media (min-width: @tablet-width) {
     width: 648px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
   }
@@ -116,7 +158,7 @@ padding-right: 18px;
     position: absolute;
     box-sizing: border-box;
     width: 400px;
-    bottom: 7px;
+    bottom: 0;
     left: 0;
   }
 }
