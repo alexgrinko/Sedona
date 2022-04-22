@@ -1,5 +1,10 @@
 .photos__item {
   position: relative;
+  padding-top: 22px;
+  padding-bottom: 17px;
+  @media (min-width: @tablet-width) {
+  padding: 0;
+  }
 }
 
 .photos__img {
@@ -117,10 +122,11 @@
 
 .photos__like {
   position: relative;
-  margin-left: 37px;
-  @media (min-width: @tablet-width) {
     margin: 0;
     padding: 0;
+    margin-left: 37px;
+  @media (min-width: @tablet-width) {
+    margin: 0;
     align-self: center;
   }
 }
@@ -144,12 +150,12 @@
 }
 
 .photos-info {
-padding-left: 18px;
-padding-right: 18px;
   @media (min-width: @tablet-width) {
     background-color: @lightgray3;
     display: flex;
     justify-content: space-between;
+    padding-right: 18px;
+    padding-left: 18px;
     margin-top: -7px;
   }
   @media (min-width: @desktop-width) {

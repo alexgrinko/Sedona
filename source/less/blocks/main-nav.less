@@ -84,6 +84,36 @@
 
 .main-nav__toggle {
   position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 70px;
+  height: 50px;
+  cursor: pointer;
+  border: none;
+  background-color: @basik_white;
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 4px;
+  background-color: @blue-sedona;
+  box-shadow: 0 8px 0 0 @blue-sedona, 0 16px 0 0 @blue-sedona;
+  border: none;
+  right: 18px;
+  top: 16px;
+}
+
+/*
+.main-nav__toggle {
+  content: "";
+  position: absolute;
   width: 23px;
   height: 23px;
   background-image: url("../img/icon-menu.svg");
@@ -96,7 +126,7 @@
     display: none;
   }
 }
-
+*/
 .main-nav--close {
   position: absolute;
   width: 22px;

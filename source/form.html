@@ -39,19 +39,19 @@
                 </div>
             </nav>
         </header>
-        <section class="page-header__welcome">
+        <section class="page-header__welcome page-header__welcome--page">
             <h1 class="visually-hidden">сайт туристического города Седона</h1>
-            <div class="page-header__photo page-header__photo--index"></div>
+            <div class="page-header__photo page-header__photo--page"></div>
         </section>
         <main class="page-main">
             <section class="reviews">
                 <h2 class="visually-hidden">Оставьте отзыв о Седоне</h2>
-                <div class="description">
+                <div class="description gray-line">
                     <p class="description__title">Оставьте свой отзыв</p>
                     <p class="description__subtitle">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
                 </div>
                 <form class="reviews__form" action="https://echo.htmlacademy.ru/courses" method="post">
-                    <fieldset class="reviews__name">
+                    <fieldset class="reviews__name gray-line">
                         <legend class="reviews__legend">Представьтесь:</legend>
                         <div class="reviews__wrap--name">
                             <label class="reviews__label--name" for="name">Имя*:</label>
@@ -66,51 +66,51 @@
                             <input class="reviews__desc" type="text" name="middle-name" id="middle-name" placeholder="Отчество">
                         </div>
                     </fieldset>
-                    <fieldset class="reviews__contacts">
+                    <fieldset class="reviews__contacts gray-line">
                         <legend class="reviews__legend">Контактная информация:</legend>
-                        <div class="reviews__wrap--cantacts">
-                            <label class="reviews__label--name" for="phone"><span class="reviews__label--opacity">Контактный</span> телефон*:</label>
+                        <div class="reviews__wrap--cantacts reviews__wrap--cantacts--phone">
+                            <label class="reviews__label--name reviews__label--contact" for="phone"><span class="reviews__label--opacity">Контактный</span> телефон*:</label>
                             <input class="reviews__desc reviews__desc--contacts" type="number" name="phone" id="phone" placeholder="Введите телефон" required>
                         </div>
-                        <div class="reviews__wrap--cantacts">
-                            <label class="reviews__label--name" for="email">Электронная почта*:</label>
+                        <div class="reviews__wrap--cantacts reviews__wrap--cantacts--email">
+                            <label class="reviews__label--name reviews__label--contact" for="email">Электронная почта*:</label>
                             <input class="reviews__desc reviews__desc--contacts" type="email" name="email" id="email" placeholder="Введите e-mail" required>
                         </div>
                     </fieldset>
-                    <fieldset class="reviews__impression">
+                    <fieldset class="reviews__impression gray-line">
                         <legend class="reviews__legend">Ваше Общее впечатление:</legend>
                         <ul class="radio__list">
                             <li class="reviews__item">
-                                <input class="visually-hidden reviews__radio" type="radio" name="impression" id="positive" checked>
+                                <input class="visually-hidden radio__input" type="radio" name="impression" id="positive" checked>
                                 <label class="reviews__label--check" for="positive">Скорее положительное</label>
                             </li>
                             <li class="reviews__item">
-                                <input class="visually-hidden reviews__radio" type="radio" name="impression" id="negative">
+                                <input class="visually-hidden radio__input" type="radio" name="impression" id="negative">
                                 <label class="reviews__label--check" for="negative">Скорее отрицательное</label>
                             </li>
                             <li class="reviews__item">
-                                <input class="visually-hidden reviews__radio" type="radio" name="impression" id="difficult">
+                                <input class="visually-hidden radio__input" type="radio" name="impression" id="difficult">
                                 <label class="reviews__label--check" for="difficult">Затрудняюсь ответить</label>
                             </li>
                         </ul>
                     </fieldset>
-                    <fieldset class="reviews__visit">
+                    <fieldset class="reviews__visit gray-line">
                         <legend class="reviews__legend">посещенные достопримечательности:</legend>
                         <ul class="checkbox__list">
                             <li class="reviews__item reviews__item--checkbox">
-                                <input class="visually-hidden reviews__checkbox" type="checkbox" name="bridge" id="bridge" checked>
+                                <input class="visually-hidden checkbox__input" type="checkbox" name="bridge" id="bridge" checked>
                                 <label class="reviews__label--check" for="bridge">Мост Дьявола</label>
                             </li>
                             <li class="reviews__item reviews__item--checkbox">
-                                <input class="visually-hidden reviews__checkbox" type="checkbox" name="mountain" id="mountain" checked>
+                                <input class="visually-hidden checkbox__input" type="checkbox" name="mountain" id="mountain" checked>
                                 <label class="reviews__label--check" for="mountain">Гора-Колокол</label>
                             </li>
                             <li class="reviews__item reviews__item--checkbox">
-                                <input class="visually-hidden reviews__checkbox" type="checkbox" name="slide-park" id="slide-park" checked>
+                                <input class="visually-hidden checkbox__input" type="checkbox" name="slide-park" id="slide-park" checked>
                                 <label class="reviews__label--check" for="slide-park">Слайд-парк</label>
                             </li>
                             <li class="reviews__item reviews__item--checkbox">
-                                <input class="visually-hidden reviews__checkbox" type="checkbox" name="red-rocks" id="red-rocks">
+                                <input class="visually-hidden checkbox__input" type="checkbox" name="red-rocks" id="red-rocks">
                                 <label class="reviews__label--check" for="red-rocks">Красные скалы</label>
                             </li>
                         </ul>
