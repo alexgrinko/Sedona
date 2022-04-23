@@ -52,7 +52,7 @@
                 </div>
                 <form class="reviews__form" action="https://echo.htmlacademy.ru/courses" method="post">
                     <fieldset class="reviews__name gray-line">
-                        <legend class="reviews__legend">Представьтесь:</legend>
+                        <legend class="reviews__legend reviews__legend--user">Представьтесь:</legend>
                         <div class="reviews__wrap--name">
                             <label class="reviews__label--name" for="name">Имя*:</label>
                             <input class="reviews__desc" type="text" name="name" id="name" placeholder="Имя" required>
@@ -67,9 +67,9 @@
                         </div>
                     </fieldset>
                     <fieldset class="reviews__contacts gray-line">
-                        <legend class="reviews__legend">Контактная информация:</legend>
+                        <legend class="reviews__legend reviews__legend--line">Контактная информация:</legend>
                         <div class="reviews__wrap--cantacts reviews__wrap--cantacts--phone">
-                            <label class="reviews__label--name reviews__label--contact" for="phone"><span class="reviews__label--opacity">Контактный</span> телефон*:</label>
+                            <label class="reviews__label--name reviews__label--contact reviews__label--phone" for="phone"><span class="reviews__label--opacity">Контактный</span> телефон*:</label>
                             <input class="reviews__desc reviews__desc--contacts" type="number" name="phone" id="phone" placeholder="Введите телефон" required>
                         </div>
                         <div class="reviews__wrap--cantacts reviews__wrap--cantacts--email">
@@ -78,24 +78,24 @@
                         </div>
                     </fieldset>
                     <fieldset class="reviews__impression gray-line">
-                        <legend class="reviews__legend">Ваше Общее впечатление:</legend>
+                        <legend class="reviews__legend reviews__legend--radio">Ваше Общее впечатление:</legend>
                         <ul class="radio__list">
-                            <li class="reviews__item">
+                            <li class="reviews__item reviews__item--radio">
                                 <input class="visually-hidden radio__input" type="radio" name="impression" id="positive" checked>
                                 <label class="reviews__label--check" for="positive">Скорее положительное</label>
                             </li>
-                            <li class="reviews__item">
+                            <li class="reviews__item reviews__item--radio">
                                 <input class="visually-hidden radio__input" type="radio" name="impression" id="negative">
                                 <label class="reviews__label--check" for="negative">Скорее отрицательное</label>
                             </li>
-                            <li class="reviews__item">
+                            <li class="reviews__item reviews__item--radio">
                                 <input class="visually-hidden radio__input" type="radio" name="impression" id="difficult">
                                 <label class="reviews__label--check" for="difficult">Затрудняюсь ответить</label>
                             </li>
                         </ul>
                     </fieldset>
                     <fieldset class="reviews__visit gray-line">
-                        <legend class="reviews__legend">посещенные достопримечательности:</legend>
+                        <legend class="reviews__legend reviews__legend--checkbox reviews__legend--line">посещенные достопримечательности:</legend>
                         <ul class="checkbox__list">
                             <li class="reviews__item reviews__item--checkbox">
                                 <input class="visually-hidden checkbox__input" type="checkbox" name="bridge" id="bridge" checked>
@@ -116,7 +116,7 @@
                         </ul>
                     </fieldset>
                     <fieldset class="reviews__emotions">
-                        <legend class="reviews__legend">Опишите свои эмоции:</legend>
+                        <legend class="reviews__legend reviews__legend--line">Опишите свои эмоции:</legend>
                         <textarea class="reviews__desc reviews__desc--text" name="text" placeholder="Опишите подробно все свои восторги"></textarea>
                     </fieldset>
                     <div class="reviews__submit">
