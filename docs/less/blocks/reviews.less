@@ -70,40 +70,39 @@
     padding-right: 0;
     position: relative;
   }
-}
 
-.reviews__legend--line::before {
-  @media (min-width: @tablet-width) {
-    position: absolute;
-    content: "";
-    background-color: @lightgray6;
-    width: 123px;
-    height: 1px;
-    top: 40px;
-    left: -165px;
+  &::before {
+    @media (min-width: @tablet-width) {
+      position: absolute;
+      content: "";
+      background-color: @lightgray6;
+      width: 123px;
+      height: 1px;
+      top: 40px;
+      left: -165px;
+    }
+    @media (min-width: @desktop-width) {
+      width: 280px;
+      left: -330px;
+    }
   }
-  @media (min-width: @desktop-width) {
-    width: 280px;
-    left: -330px;
+
+  &::after {
+    @media (min-width: @tablet-width) {
+      position: absolute;
+      content: "";
+      background-color: @lightgray6;
+      width: 123px;
+      height: 1px;
+      top: 40px;
+      left: 355px;
+    }
+    @media (min-width: @desktop-width) {
+      width: 280px;
+      left: 365px;
+    }
   }
 }
-
-.reviews__legend--line::after {
-  @media (min-width: @tablet-width) {
-    position: absolute;
-    content: "";
-    background-color: @lightgray6;
-    width: 123px;
-    height: 1px;
-    top: 40px;
-    left: 355px;
-  }
-  @media (min-width: @desktop-width) {
-    width: 280px;
-    left: 365px;
-  }
-}
-
 
 .reviews__form {
   @media (min-width: @tablet-width) {

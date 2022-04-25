@@ -1,6 +1,6 @@
 .main-nav__wrapper {
   display: none;
-  position: absolute;
+  position: static;
   z-index: 4;
   width: 100%;
   @media (min-width: @tablet-width) {
@@ -96,6 +96,10 @@
   @media (min-width: @tablet-width) {
     display: none;
   }
+}
+
+.main-nav__toggle--none {
+  display: none;
 }
 
 .main-nav__toggle::before {
