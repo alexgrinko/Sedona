@@ -1,0 +1,55 @@
+.advantages-city {
+  background-color: @basik_white;
+}
+
+.advantages-city__list {
+  list-style: none;
+  text-align: left;
+  margin: 0;
+  padding-bottom: 26px;
+  padding-left: 18px;
+  padding-right: 18px;
+    @media (min-width: @tablet-width) {
+      display: grid;
+      grid-template-columns: 240px 240px 240px;
+      text-align: center;
+      gap: 20px;
+    }
+    @media (min-width: @desktop-width) {
+      grid-template-columns: 386px 386px 368px;
+    }
+}
+
+.advantages-city--img {
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    display: flex;
+  }
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
+}
+
+.advantages-city__text {
+  margin-left: 10px;
+}
+
+.advantages-city__item img {
+  align-self: flex-start;
+  padding-top: 20px;
+  @media (min-width: @tablet-width) {
+    transform: scale(2);
+    text-align: center;
+    align-self: center;
+    padding-top: 47px;
+    margin-bottom: 44px;
+  }
+}
+
+.advantages-city__item {
+  display: flex;
+  @media (min-width: @tablet-width) {
+    flex-direction: column;
+    text-align: center;
+  }
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Academy "Sedona"</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/152.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="page__body">
+    <div class="page__wrap">
+        <header class="page-header">
+            <a href="index.html">
+                <picture>
+                    <source media="(min-width: 1200px)" srcset="../img/logo_des.svg">
+                    <source media="(min-width: 768px)" srcset="../img/logo_tab.svg">
+                    <img class="page-header__logo" src="../img/logo.svg" width="108" height="84" alt="Логотип Седона">
+                </picture>
+            </a>
+            <nav class="main-nav">
+                <button class="main-nav__toggle" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+                <div class="main-nav__wrapper">
+                    <ul class="main-nav__list">
+                        <li class="main-nav__item">
+                            <a class="main-nav__link" href="index.html">Главная</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="main-nav__link" href="catalog.html">Фото и Видео</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="main-nav__link" href="form.html">Форма Отзыва</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML academy</a>
+                        </li>
+                    </ul>
+                    <button class="main-nav--close" type="button" aria-label="Закрыть"></button>
+                </div>
+            </nav>
+        </header>
+        <section class="page-header__welcome">
+            <h1 class="visually-hidden">сайт туристического города Седона</h1>
+            <div class="page-header__photo page-header__photo--page"></div>
+        </section>
+        <main class="page-main">
+            <section class="media-library">
+                <h2 class="visually-hidden">фотографии и видео Седона</h2>
+                <div class="description description--catalog gray-line">
+                    <p class="description__title">фото и видео</p>
+                    <p class="description__subtitle">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+                </div>
+                <div class="photos">
+                    <ul class="photos__list">
+                        <li class="photos__item gray-line">
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="../img/catalog/space-des.jpg, ../img/catalog/space-des@2x.jpg 2x">
+                                <source media="(min-width: 768px)" srcset="../img/catalog/space-tab.jpg, ../img/catalog/space-tab@2x.jpg 2x">
+                                <img class="photos__img photos__img--first" src="../img/catalog/space-mob.jpg" srcset="../img/catalog/space-mob@2x.jpg 2x" width="320" height="280" alt="фотография просторов Седона">
+                            </picture>
+                            <div class="photos-info photos-info--first">
+                                <div>
+                                    <p class="photos__title">неродные просторы</p>
+                                    <p class="photos__subtitle">Автор фото: Борис</p>
+                                </div>
+                                <p class="photos__like">1350</p>
+                            </div>
+                        </li>
+                        <li class="photos__item gray-line">
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="../img/catalog/vegetation-des.jpg, ../img/catalog/vegetation-des@2x.jpg 2x">
+                                <source media="(min-width: 768px)" srcset="../img/catalog/vegetation-tab.jpg, ../img/catalog/vegetation-tab@2x.jpg 2x">
+                                <img class="photos__img" src="../img/catalog/vegetation.jpg" srcset="../img/catalog/vegetation@2x.jpg 2x" width="320" height="280" alt="фотография растения которые растут в местах Седона">
+                            </picture>
+                            <div class="photos-info">
+                                <div>
+                                    <p class="photos__title">Местная растительность</p>
+                                    <p class="photos__subtitle">Автор фото: Сергей</p>
+                                </div>
+                                <p class="photos__like">143</p>
+                            </div>
+                        </li>
+                        <li class="photos__item gray-line">
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="../img/catalog/road-des.jpg, ../img/catalog/road-des@2x.jpg 2x">
+                                <source media="(min-width: 768px)" srcset="../img/catalog/road-tab.jpg, ../img/catalog/road-tab@2x.jpg 2x">
+                                <img class="photos__img" src="../img/catalog/road.jpg" srcset="../img/catalog/road-mob@2x.jpg 2x" width="320" height="280" alt="фотография дороги которая ведет на Север Седона">
+                            </picture>
+                            <div class="photos-info">
+                                <div>
+                                    <p class="photos__title">Дорога на север</p>
+                                    <p class="photos__subtitle">Автор фото: Петр</p>
+                                </div>
+                                <p class="photos__like">96</p>
+                            </div>
+                        </li>
+                        <li class="photos__item gray-line">
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="../img/catalog/most-des.jpg, ../img/catalog/most-des@2x.jpg 2x">
+                                <source media="(min-width: 768px)" srcset="../img/catalog/most-tab.jpg, ../img/catalog/most-tab@2x.jpg 2x">
+                                <img class="photos__img" src="../img/catalog/most.jpg" srcset="../img/catalog/most@2x.jpg 2x" width="320" height="280" alt="фотографии достопримечательности седона - Мост дьявола">
+                            </picture>
+                            <div class="photos-info">
+                                <div>
+                                    <p class="photos__title">Мост дьявола</p>
+                                    <p class="photos__subtitle">Автор фото: Антон</p>
+                                </div>
+                                <p class="photos__like">234</p>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="video">
+                    <div class="description description--catalog">
+                        <p class="description__title description__title--ask">Все еще сомневаетесь?</p>
+                        <p class="description__subtitle">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+                    </div>
+                    <div class="video__img">
+                        <div class="video__photos">
+                            <div class="video__player">
+                                <div class="video__range"></div>
+                                <div class="video__player-element">
+                                    <div class="video__replay video__player--button"></div>
+                                    <div class="video__subtitles video__player--button"></div>
+                                    <div class="video__fullscreen video__player--button"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="page-footer">
+            <p class="page-footer__hashtag">#visitsedona</p>
+            <ul class="social__list">
+                <li class="social__item">
+                    <a href="#">
+                        <span class="visually-hidden">twitter</span>
+                        <img src="img/social/twitter.svg" alt="ccылка на twitter">
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a href="#">
+                        <span class="visually-hidden">fb</span>
+                        <img src="img/social/fb.svg" alt="ccылка на страницу FaceBook">
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a href="#">
+                        <span class="visually-hidden">youtube</span>
+                        <img src="img/social/youtube.svg" alt="ccылка на youtube канал">
+                    </a>
+                </li>
+            </ul>
+            <div class="page-footer__copyright">
+                <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">
+                    <p>разработано</p>
+                    <svg class="copyright__logo" width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" fill="black"/>
+              </svg>
+                </a>
+            </div>
+        </footer>
+    </div>
+    <script src="js/nav.js"></script>
+</body>
+
+</html>
