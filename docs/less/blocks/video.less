@@ -1,33 +1,34 @@
 
 .video {
+  width: 320px;
+  margin: 0 auto;
   margin-bottom: 143px;
   @media (min-width: @tablet-width) {
     margin-bottom: 76px;
+    width: 648px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 800px;
   }
 }
 
 .video__img {
   text-align: center;
+  position: relative;
 }
 
 .video__photos {
   margin: 0 auto;
   margin-bottom: 5px;
-  background-image: url("../img/catalog/video-mob.jpg");
-  background-repeat: no-repeat;
   width: 320px;
   height: 201px;
-  background-size: cover;
-  position: relative;
+  object-fit: contain;
     @media (min-width: @tablet-width) {
-      background-image: url("../img/catalog/video-tab.jpg");
       width: 648px;
-      height: 686px;
+      height: 500px;
   }
     @media (min-width: @desktop-width) {
-      background-image: url("../img/catalog/video-des.jpg");
       width: 800px;
-      height: 500px;
   }
 }
 
@@ -36,17 +37,14 @@
   height: 45px;
   background-color: fade(@basik_black, 60%);
   text-align: center;
+  margin: 0 auto;
   position: absolute;
-  margin-left: 20px;
-  left: 0;
-  bottom: 0;
+  bottom: 13px;
+  left: 20px;
   @media (min-width: @tablet-width) {
-    width: 648px;
+    width: 100%;
     height: 93px;
-    margin-left: 0;
-  }
-  @media (min-width: @desktop-width) {
-    width: 800px;
+    left: 0;
   }
 }
 
@@ -108,44 +106,32 @@
 }
 
 .video__replay {
-  width: 16px;
-  height: 20px;
-  background-image: url("../img/replay.svg");
-  margin-right: 106px;
-  @media (min-width: @tablet-width) {
-    background-image: url("../img/replay-white.svg");
-    margin-right: 439px;
-  }
-  @media (min-width: @desktop-width) {
-    margin-right: 587px;
-  }
-}
+  margin-right: auto;
+ }
+
 
 .video__subtitles {
-  width: 32px;
-  height: 20px;
-  background-image: url("../img/subtitles.svg");
-  @media (min-width: @tablet-width) {
-    background-image: url("../img/subtitles-white.svg");
-  }
-}
-
-
-.video__fullscreen {
-  width: 20px;
-  height: 20px;
-  background-image: url("../img/fullscreen.svg");
-  @media (min-width: @tablet-width) {
-    background-image: url("../img/fullscreen-white.svg");
-  }
+  margin-right: 20px;
 }
 
 .video__player--button {
+  background-color: transparent;
+  border: none;
   cursor: pointer;
+  color: @darkgray2;
   &:active {
     opacity: 0.3;
   }
   &:hover {
-    opacity: 0.6;
+    color: @darkgray;
+  }
+  @media (min-width: @tablet-width) {
+    color: @basik_white;
+    &:active {
+      opacity: 0.3;
+    }
+    &:hover {
+      opacity: 0.6;
+    }
   }
 }
