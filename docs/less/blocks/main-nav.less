@@ -1,9 +1,15 @@
+.main-nav {
+  @media (min-width: @tablet-width) {
+    min-height: 56px;
+  }
+}
 
 .main-nav__wrapper {
   display: none;
   position: static;
   z-index: 4;
   width: 100%;
+
   @media (min-width: @tablet-width) {
     position: static;
     display: block;
@@ -11,7 +17,9 @@
     width: 723px;
     margin: 0 auto;
     padding: 0 10px;
+    min-height: 56px;
   }
+
   @media (min-width: @desktop-width) {
     width: 1070px;
   }
@@ -20,10 +28,11 @@
 
 @keyframes bounce {
   0% {
-      transform: translateY(-100px);
+    transform: translateY(-100px);
   }
+
   100% {
-      transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
@@ -36,24 +45,29 @@
   list-style: none;
   padding: 0;
   margin: 0;
+
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
-    padding-left: 35px;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    align-self: center;
+    flex-wrap: wrap;
   }
 }
 
 .main-nav__item:nth-child(3) {
   @media (min-width: @tablet-width) {
-  padding-left: 230px;
+    margin-left: 100px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 230px;
   }
 }
 
 .main-nav__item {
   background-color: @blue-sedona;
-  box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2), inset 0px 1px 0px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+
   @media (min-width: @tablet-width) {
     background-color: @basik_white;
     box-shadow: none;
@@ -70,15 +84,19 @@
   box-sizing: border-box;
   width: 100%;
   display: inline-block;
+
   @media (min-width: @tablet-width) {
     color: @basik_black;
     font-size: 14px;
     line-height: 26px;
+    min-width: 130px;
+    padding-top: 15px;
   }
 }
 
 .main-nav__link:hover {
   background-color: @blue-sedona2;
+
   @media (min-width: @tablet-width) {
     background-color: @basik_white;
     color: @blue-sedona;
@@ -88,6 +106,7 @@
 .main-nav__link:active {
   background-color: @blue-sedona3;
   color: fade(@basik_white, 30%);
+
   @media (min-width: @tablet-width) {
     background-color: @basik_white;
     color: fade(@basik_black, 30%);
@@ -105,6 +124,7 @@
   cursor: pointer;
   border: none;
   background-color: @basik_white;
+
   @media (min-width: @tablet-width) {
     display: none;
   }
@@ -153,6 +173,7 @@
   border: none;
   right: 18px;
   top: 10px;
+
   @media (min-width: @tablet-width) {
     display: none;
   }

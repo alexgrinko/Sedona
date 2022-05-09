@@ -8,10 +8,18 @@
   width: 100%;
   position: relative;
   padding-top: 54px;
-  @media (min-width: @tablet-width) {
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__welcome {
     padding-top: 0;
   }
+
+  .page-header__photo {
+    background-image: url("../img/img_index/intro-triangle.svg"), url("../img/img_index/intro-des.jpg");
+  }
 }
+
 
 .page-header__photo {
   position: relative;
@@ -22,21 +30,25 @@
   background-size: 1200px 57px, cover;
   background-position-x: 50%;
   background-position-y: 100%;
-  @media (min-width: @tablet-width) {
-    background-image: url("../img/img_index/intro-triangle.svg"), url("../img/img_index/intro-des.jpg");
-  }
 }
+
 
 .page-header__photo--page {
   height: 157px;
-  @media (min-width: @tablet-width) {
+}
+
+.page-header__photo--index {
+  min-height: 391px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__photo--page {
     height: 289px;
   }
 }
 
-.page-header__photo--index {
-  min-height: 381px;
-  @media (min-width: @tablet-width) {
+@media (min-width: @tablet-width) {
+  .page-header__photo--index {
     min-height: 518px;
   }
 }
@@ -48,14 +60,19 @@
   position: absolute;
   background-image: url("../img/img_index/text-index.svg");
   background-size: cover;
-  top: 50%;
+  top: 51%;
   left: 50%;
   transform: translate(-50%, -50%);
-  @media (min-width: @tablet-width) {
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__photo--index::before {
+    top: 49%;
     min-width: 460px;
     min-height: 350px;
   }
 }
+
 .page-header__photo--page::before {
   content: "";
   width: 229px;
@@ -66,7 +83,10 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  @media (min-width: @tablet-width) {
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__photo--page::before {
     width: 457px;
     height: 78px;
   }

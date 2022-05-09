@@ -2,18 +2,25 @@
   align-items: center;
   text-align: center;
   background-color: @basik_white;
-  margin-top: 76px;
+  margin-top: 31px;
   padding-bottom: 14px;
-  @media (min-width: @tablet-width) {
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 648px;
     margin: 0 auto;
-    padding: 36px 10px;
+    padding: 0 10px;
+    max-height: 120px;
   }
-  @media (min-width: @desktop-width) {
-    width: 980px;
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    width: 960px;
   }
 }
 
@@ -22,7 +29,10 @@
   font-size: 21px;
   line-height: 26px;
   margin-bottom: 34px;
-  @media (min-width: @tablet-width) {
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__hashtag {
     margin-bottom: 0;
     padding-bottom: 18px;
   }

@@ -9,7 +9,9 @@
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/152.png">
     <link rel="manifest" href="manifest.webmanifest">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 
 <body class="page__body">
@@ -195,8 +197,30 @@
                 </a>
             </div>
         </footer>
+
+        <section class="popap popap__sent">
+            <div class="description--popap-sent">
+                <h2 class="description__title--popap-sent">Ваш отзыв отправлен!</h2>
+                <p class="description__subtitle--popap-sent">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время мы опубликуем его на сайте.</p>
+            </div>
+            <div class="popap__button-wrap">
+                <button class="button button--sent">Закрыть окно</button>
+            </div>
+        </section>
+
+        <section class="popap popap__error">
+            <div class="description--popap-error">
+                <h2 class="description__title--popap-error">Что-то пошло не так!</h2>
+                <p class="description__subtitle--popap-error">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+            </div>
+            <div class="modal__failure-close">
+                <button class="button button--error">ок</button>
+            </div>
+        </section>
     </div>
+
     <script src="js/nav.js"></script>
+    <script src="js/modal.js"></script>
 </body>
 
 </html>
