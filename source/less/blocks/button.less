@@ -1,0 +1,60 @@
+.button {
+  background-color: @blue-sedona;
+  color: @basik_white;
+  font-weight: 700;
+  font-size: 21px;
+  border: none;
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 16px 32px 16px 32px;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: @blue-sedona2;
+}
+
+.button:active {
+  background-color: @blue-sedona3;
+  color: fade(@basik_white, 30%);
+}
+
+.button--reviews {
+  @media (min-width: @tablet-width) {
+    width: 324px;
+    height: 58px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 480px;
+  }
+}
+
+.button--page {
+  @media (min-width: @tablet-width) {
+    width: 458px;
+    height: 58px;
+  }
+}
+
+.button--error {
+  width: 180px;
+  height: 58px;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 272px;
+  }
+}
+
+.button--sent {
+  margin-top: 20px;
+  margin-left: 18px;
+  margin-right: 18px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
+}
