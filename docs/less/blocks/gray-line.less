@@ -1,0 +1,19 @@
+.gray-line {
+  position: relative;
+}
+
+.gray-line::before {
+  content: "";
+  position: absolute;
+  width: 100vw;
+  margin-right: 50%;
+  height: 1px;
+  background-color: @lightgray4;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 0);
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
